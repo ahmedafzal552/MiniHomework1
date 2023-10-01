@@ -29,6 +29,12 @@ public class MiniHomerwork1 {
             
             System.out.println("You can join the club");
         }
+        else if(username.startsWith("S")){
+            System.out.println("You can join the club");
+        }
+        else if(username.startsWith("A")){
+            System.out.println("You can join the club");
+        }
         else{
             //its not b
             System.out.println("No Entry");
