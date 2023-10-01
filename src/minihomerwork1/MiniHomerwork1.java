@@ -21,24 +21,27 @@ public class MiniHomerwork1 {
         IOUtils myInput = new IOUtils();
         
         String username;
-        
-        username = myInput.getUserText("Enter your name. To Join the Club: ");
-        username = username.toUpperCase();
-        
-        if(username.startsWith("B")){
+        boolean valid = false;
+
+        do{
+            username = myInput.getUserText("Enter your name. To Join the Club: ");
+            username = username.toUpperCase();
             
-            System.out.println("You can join the club");
-        }
-        else if(username.startsWith("S")){
-            System.out.println("You can join the club");
-        }
-        else if(username.startsWith("A")){
-            System.out.println("You can join the club");
-        }
-        else{
-            //its not b
-            System.out.println("No Entry");
-        }
+            if(username.startsWith("B")){
+                System.out.println("You can join the club");
+            }
+            else if(username.startsWith("S")){
+                System.out.println("You can join the club");
+            }
+            else if(username.startsWith("A")){
+                System.out.println("You can join the club");
+            }
+            else{
+                valid = true;
+                System.out.println("Soory,No Entry. Please enter your name again");
+                System.out.println(" ");
+            }
+        }while(Valid);
     }
     
 }
